@@ -30,12 +30,12 @@ function myFunction() {
     myTable += ("<tr style='height:30px;'>");
     
     //creates cell
-    myTable += ("<td style='width:30px;background-color:gray'></td>");
+    myTable += ("<td style='width:30px;background-color:black'></td>");
 
     for(var i = lower_bound_top; i <= upper_bound_top; i++) {
         
         //creates the top row
-        myTable +=("<td style='width:30px;background-color:gray'>" + i + "</td>");
+        myTable +=("<td style='width:30px;background-color:yellow'>" + i + "</td>");
     }
     for(var k = lower_bound_side; k <= upper_bound_side; k++) {
         
@@ -43,12 +43,12 @@ function myFunction() {
         myTable +=("<tr style='height:30px;'>");
         
         //creates the left hand side parameter value cell
-        myTable +=("<td style='width:30px;background-color:gray'>" + k + "</td>");
+        myTable +=("<td style='width:30px;background-color:yellow'>" + k + "</td>");
         
         for(var i = lower_bound_top; i <= upper_bound_top; i++) {
             
             // creates the multiplication cell
-            myTable +=("<td style='width:30px;background-color:white'>" + i*k + "</td>");
+            myTable +=("<td style='width:30px;background-color:orange'>" + i*k + "</td>");
         }
         //Rows everything in the for loop together
         myTable +=("</tr>");
