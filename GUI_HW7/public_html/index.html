@@ -1,0 +1,41 @@
+<!-- Michael Antrobus -->
+<!-- Michael_Antrobus@student.uml.edu -->
+<!-- Student in 91.601 GUI Programming 1 -->
+<!-- 11/15/16 -->
+<!--Page that generates a multiplication table based on input-->
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Multiplication Table</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/jquery.validate.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.15.1/additional-methods.min.js"></script>
+        <script src="js/javascript.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/css.css">
+    </head>
+    <body>
+        <div id ="header">
+            <h1>HomeWork 7 - Multiplication Table - ERROR validation</h1>
+            <p>This program takes 4 inputs that act as a range for the multiplication table.
+            After reading the 4 inputs from the user a multiplication table will be
+            generated with the inputs acting as bounds.</p>
+        </div>
+        <!--Form that requests the users input for what bounds there should be for the multiplication table-->
+        <div id ="form">
+            <form id="myForm" name="myForm" action="" method="get">
+                <br>Please insert the minimum number for the top row: <br>
+                <input id="first" name="first" type="number"><br>
+                <br>Please insert the maximum number for the top row: <br>
+                <input id="second" name="second" type="number"><br>
+                <br>Please insert the minimum number for the side column: <br>
+                <input id="third" name="third" type="number"><br>
+                <br>Please insert the maximum number for the side column: <br>
+                <input id="fourth" name="fourth" type="number"><br>
+                <input id="Submit" type="submit" value="Submit"/>
+            </form>
+        </div>
+        <!--Div for where the table will be generated-->
+        <div id="table"></div>
+    </body>
+</html>
