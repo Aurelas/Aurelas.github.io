@@ -1,0 +1,41 @@
+
+
+.slider {
+    width: 400px;
+    margin: 10px 0;
+    
+}
+
+h1{
+    text-align: center;
+    
+}
+
+body{
+    background-color: lightblue;
+}
+#table{
+    
+    padding-top: 20px;
+    
+    background-color: lightcyan;
+    
+}
+#form{
+    background-color: lightcyan;
+}
+#first{
+    background-color: lightpink;
+}
+#second{
+    background-color: lightpink;
+    
+}
+#third{
+    background-color: lightpink;
+    
+}
+#fourth{
+    background-color: lightpink;
+    
+}
