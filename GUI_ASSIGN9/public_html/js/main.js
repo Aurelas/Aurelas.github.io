@@ -17,12 +17,13 @@ var globalScore = 0;  //Total score for the player
 var currentScore = 0; //Score of the current round
 var tripleWordScore = false; //Whether or not there is a tile on the triple word score tile
 
-//alphabet array and the corresponding array of values in alphabetical order
+//Alphabet array
 var piecesArray = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+//Value array
 var valuesArray = [1, 3, 3, 2, 1, 4, 2, 4, 1, 8, 5, 1, 3, 1, 1, 3, 10, 1, 1, 1, 1, 4, 4, 8, 4, 10];
 
 
-//drag and drop stuff
+//drag and drop 
 function DragAndDrop() {
     $(".draggable").draggable({
         //Returns the tile to its original position when you remove it from the board
@@ -56,20 +57,20 @@ function DragAndDrop() {
     });
 };
 
-
+//creates new scrabble game
 function new_game() {
     var alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; //Possible letters to give to the user
-    var randomTile = 0; //Variable for determining what kind of tile to generate on the baord
-    var tripleTileUsed = false; //Determines whether a triple word score tile has been generated
+    var random_tile = 0; 
+    var triple_tile_used = false; //Boolean to say whether a triple word score tile has been generated
     //Clears the board and the rack
     $("#rack").html("");
     $("#board").html("");
 
-    // generates new random letters until there is enough to fill up the tray, while keeping the previous tiles
+    // generates new random letters until there is enough
     for (var i = letters.length; i < 7; i++)
         letters += alphabet.charAt(Math.floor(Math.random() * alphabet.length));
 
-    //Creates tiles for the rack based on the letters string as well as generates random tiles for the board
+    //Creates tiles for the rack
     for (var j = 0; j < 7; j++) {
         $("#rack").append("<div class='draggable'>"
             + "<img src='img/Scrabble_Tile_"
@@ -80,8 +81,8 @@ function new_game() {
             + "</div>");
 
         //Generates random board tiles
-        randomTile = Math.floor(Math.random() * 4);
-        switch (randomTile) {
+        random_tile = Math.floor(Math.random() * 4);
+        switch (random_tile) {
             case 0:
                 $("#board").append("<div class='droppable'>" +
                     "<img src='img/plain_square.png' alt='plain'>" +
@@ -95,8 +96,8 @@ function new_game() {
                 break;
 
             case 2:
-                if (!tripleTileUsed) {
-                    tripleTileUsed = true;
+                if (!triple_tile_used) {
+                    triple_tile_used = true;
                     $("#board").append("<div class='droppable'>" +
                         "<img src='img/triple_word_square.png' alt='triple_word'>" +
                         "</div>");
@@ -119,7 +120,7 @@ function new_game() {
     DragAndDrop();
 
     //If the player played a word on the triple word score tile, then triple the score of the entire word and reset the
-    //tripleWordScore variable
+  
     if (tripleWordScore) {
         currentScore = currentScore * 3;
         tripleWordScore = false;
