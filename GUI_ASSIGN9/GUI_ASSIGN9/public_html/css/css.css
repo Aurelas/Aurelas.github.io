@@ -1,0 +1,26 @@
+/*Michael Antrobus*/
+/*Michael_Antrobs@student.uml.edu*/
+/*Student in 91.601 GUI Programming 1*/
+/*12/6/16*/
+/*Css for scrabble*/
+
+body{
+    background-color: orange;
+}
+div#container{
+    text-align: center;
+}
+#board {
+    display: block;
+    font-size: 0;
+    border-color: black ;
+    border-width: 2px;
+}
+
+#rack{
+    display: inline ;
+}
+
+.draggable, .droppable {
+    display: inline-block;
+}
