@@ -5,16 +5,31 @@
 /*Css for scrabble*/
 
 body{
-    background-color: orange;
+    background: url(../img/Scrabble-Logo-Small.jpg);
+    background-color: lightblue;
+}
+p{
+    background-color: lightblue;
+    text-transform: capitalize;
 }
 div#container{
     text-align: center;
+}
+div#score{
+    background-color: lightblue;
+}
+div#total_score{
+    background-color: lightblue;
+}
+div#rack{
+    background-color: lightblue;
 }
 #board {
     display: block;
     font-size: 0;
     border-color: black ;
     border-width: 2px;
+    background-color: lightblue;
 }
 
 #rack{
