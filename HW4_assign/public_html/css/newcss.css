@@ -1,0 +1,60 @@
+/*
+Name: Michael Antrobus
+Email: Michael_Antrobus@student.uml.edu
+Student: University of Massachusetts Lowell 
+Class: GUI Programming I COMP 4610 - 201
+Date: 9/12/2016
+Description: This will be my index page for GUI programming
+*/
+/*
+Sets background color to white and applies a linear gradient over the top of the body
+*/
+body{
+    background-color: white;
+    background: linear-gradient( 0deg, pink, red );
+}
+/*
+Aligns the text of the header 1 
+*/
+h1{
+    text-align: center;
+    
+}
+/*
+Centers my picture
+*/
+#picture{
+    text-align: center;
+    padding-right: 170px;
+}
+/*
+Applies changes the my introduction paragraph
+*/
+#content{
+    font-family: Georgia, "Times New Roman", serif;
+    width: 30em;
+    border: 3px dotted purple;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/*
+Creates a white background text box for where assignment links will go
+*/
+nav ul{
+    font-size: 1.2em;
+    font-weight: bolder;
+    list-style-type: none;     
+    width: .5em;       
+    float:left;   
+    border: 3px solid black;
+    padding-right: 150px;
+    padding-bottom: 290px;
+    background-color: white;
+}
+/*
+Centers the text and makes it bold for the validation locations
+*/
+footer{
+    text-align: center;
+    font-weight: bold;
+}
